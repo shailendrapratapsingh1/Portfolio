@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="Blog.css">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f8f9fc;
+        }
+
+        /* Heading */
+
+        .heading{
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        .heading h1{
+            font-size:45px;
+            color:#222;
+        }
+
+        .heading h1 span{
+            color:#7c3aed;
+        }
+
+        .heading p{
+            margin-top:15px;
+            color:#666;
+            font-size:18px;
+        }
+
+        /* Blog Container */
+
+        .container{
+            width:90%;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:30px;
+            padding-bottom:80px;
+        }
+
+        /* Card */
+
+        .card{
+            background:#fff;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 8px 20px rgba(0,0,0,.1);
+            transition:.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 15px 35px rgba(124,58,237,.25);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .content{
+            padding:20px;
+        }
+
+        .date{
+            color:#7c3aed;
+            font-size:14px;
+            font-weight:bold;
+        }
+
+        .content h2{
+            margin:15px 0;
+            color:#222;
+        }
+
+        .content p{
+            color:#666;
+            line-height:1.7;
+        }
+
+        .content a{
+            display:inline-block;
+            margin-top:20px;
+            text-decoration:none;
+            color:#7c3aed;
+            font-weight:bold;
+        }
+
+        .content a:hover{
+            letter-spacing:1px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <section class="heading">
+
+        <h1>My <span>Blog</span></h1>
+
+        <p>Sharing my learning journey and web development knowledge.</p>
+
+    </section>
+
+
+    <section class="container">
+
+        <!-- Card 1 -->
+
+        <div class="card">
+
+            <img src="images/blog1.jpg" alt="Blog">
+
+            <div class="content">
+
+                <span class="date">15 July 2026</span>
+
+                <h2>How I Built My Portfolio</h2>
+
+                <p>
+                    Learn how I created my responsive portfolio website
+                    using HTML, CSS and JavaScript.
+                </p>
+
+                <a href="#">Read More →</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 2 -->
+
+        <div class="card">
+
+            <img src="images/blog2.jpg" alt="Blog">
+
+            <div class="content">
+
+                <span class="date">18 July 2026</span>
+
+                <h2>Understanding JavaScript DOM</h2>
+
+                <p>
+                    A beginner-friendly explanation of DOM manipulation
+                    with practical examples.
+                </p>
+
+                <a href="#">Read More →</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 3 -->
+
+        <div class="card">
+
+            <img src="images/blog3.jpg" alt="Blog">
+
+            <div class="content">
+
+                <span class="date">22 July 2026</span>
+
+                <h2>Getting Started with React</h2>
+
+                <p>
+                    My experience of learning React and creating
+                    reusable components.
+                </p>
+
+                <a href="#">Read More →</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
